@@ -1,0 +1,127 @@
+p { font-family: Roboto; }
+li {font-family: Roboto; }
+ol {font-family: Roboto; }
+h2 {font-family: Roboto; }
+/* h1 {font-family: Roboto; } */
+h4 {font-family: Roboto; }
+
+/* .nav-bar{
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+} */
+
+.about{
+  display: flex;
+  flex-direction: row;
+  padding: 100px 0px 100px 0px;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+@media (max-width: 700px){
+	.about{
+		width: 100%;
+    display: flex;
+    flex-direction: column;
+	}
+}
+
+.about-text{
+  justify-content: center;
+  z-index: 100;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  padding: 20px 0px 20px 50px;
+}
+
+.project-section{
+  padding: 20px 50px 15px 50px;
+}
+
+.projects{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0px;
+  /* add flexbox if necessary*/
+}
+
+.project-image{
+  padding: 10px;
+}
+
+/* OVERLAY DETAILS */
+
+.project-thumbnail {
+  position: relative;
+  max-width: 100%;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.overlay-text {
+  width: 75%;
+  color: white;
+  text-align: center;
+}
+
+.zoom{
+  transition: transform .5s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+
+/* center the text */
+.project-descrip {
+    display: flex;
+    justify-content: center;
+  }
+
+.interface {
+  /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+
+
+.heading{
+  color:black;
+  font-size:30px;
+}
+
+.container{
+  /* display: flex;
+  flex: 1;
+  overflow: auto;
+  flex-direction: row; */
+  position: relative;
+  padding: 0px;
+  width: 100%;
+}
