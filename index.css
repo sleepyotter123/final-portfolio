@@ -1,4 +1,4 @@
-p { font-family: Roboto; }
+/* p { font-family: Roboto; } */
 li {font-family: Roboto; }
 ol {font-family: Roboto; }
 h2 {font-family: Roboto; }
@@ -19,7 +19,7 @@ h4 {font-family: Roboto; }
   padding: 100px 0px 100px 0px;
   align-items: center;
   justify-content: center;
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -31,6 +31,25 @@ h4 {font-family: Roboto; }
 	}
 }
 
+.about-about{
+  display: flex;
+  flex-direction: row;
+  padding: 100px 0px 0px 0px;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+@media (max-width: 700px){
+	.about-about{
+		width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	}
+}
+
 .about-text{
   justify-content: center;
   z-index: 100;
@@ -38,6 +57,25 @@ h4 {font-family: Roboto; }
   width: 100%;
   align-items: center;
   padding: 20px 0px 20px 50px;
+}
+
+.about-text-about{
+  justify-content: center;
+  z-index: 100;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  padding: 20px 50px 20px 0px;
+}
+
+.more-about{
+  display: flex;
+  flex-direction: row;
+  padding: 100px 0px 100px 0px;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
 }
 
 .project-section{
